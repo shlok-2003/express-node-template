@@ -1,0 +1,30 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "commonjs",
+        "moduleResolution": "node",
+
+        "rootDir": "./src",
+        "outDir": "./dist",
+
+        "strict": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "removeComments": false, // change if you want to remove comments
+        "resolveJsonModule": true,
+        "forceConsistentCasingInFileNames": true,
+
+        "types": ["node"],
+        "baseUrl": "./src",
+        "paths": {
+            "@/*": ["./*"]
+        },
+
+        "sourceMap": true,
+        "declaration": true,
+        "declarationMap": true
+    },
+    "include": ["src/**/*.ts", "src/types/express.d.ts"],
+    "exclude": ["node_modules"]
+}
